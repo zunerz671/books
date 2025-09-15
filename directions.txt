@@ -1,0 +1,21 @@
+Exercise:
+Create a brand new Rails API of your choice
+rails new <api name> --api --database=postgresql
+create the db:
+rails db:create
+Start your server
+rails server
+Test going to localhost:3000 in the browser to make sure it works
+Generate your first model (always singular)
+rails generate model <model name> size:string brand:string model:string
+Review the migration and model file to make sure they're correct
+Migrate your new database table to update your schema
+rails db:migrate
+Test creating some data and viewing it in rails console
+Create your controller (always plural)
+rails generate controller <controller name>
+Create all 5 CRUD Actions (Index, Show, Create, Update, and Destroy)
+I recommend to create the index action and route and then test it, then create the show action and route and test it, etc.
+I do not recommend to do all 5 CRUD Actions at once and then test it
+Create all 5 Routes
+Test it all in HTTPie
